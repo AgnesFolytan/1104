@@ -12,4 +12,9 @@ export class AppController {
       message: this.appService.getHello()
     };
   }
+
+  @Get("books")
+  listBooks(){
+    return 
+  }
 }

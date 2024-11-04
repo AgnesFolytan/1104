@@ -2,10 +2,6 @@ import { IsBoolean, IsNotEmpty, IsNumber, IsString } from "class-validator";
 
 export class CreateBookDto {
     @IsNotEmpty()
-    @IsNumber()
-    id: number
-
-    @IsNotEmpty()
     @IsString()
     title: string
 
@@ -20,8 +16,4 @@ export class CreateBookDto {
     @IsNotEmpty()
     @IsNumber()
     publishYear: number
-
-    @IsNotEmpty()
-    @IsBoolean()
-    reserved: boolean
 }
